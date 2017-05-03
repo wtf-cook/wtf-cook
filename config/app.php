@@ -177,6 +177,21 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         * Custom Service Providers
+         */
+        Wtf\Recipes\Providers\RecipesServiceProvider::class,
+
+        /**
+         * Annotations Service Provider
+         *
+         * Must be last, so that the events to add annotations are registered before
+         * the Annotations service provider is booted
+         *
+         */
+
+        App\Providers\AnnotationsServiceProvider::class,
+
     ],
 
     /*

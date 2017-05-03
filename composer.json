@@ -20,7 +20,7 @@
         ],
         "psr-4": {
             "App\\": "app/",
-            "Wtf\\": "app-wtfcking-cook/"
+            "Wtf\\": "wtfcook/"
         }
     },
     "autoload-dev": {
